@@ -42,10 +42,11 @@ while true; do
     echo -e "${C} 3) ${W}RDP Installer ${G}(Desktop Environment)${N}"
     echo -e "${C} 4) ${W}Tailscale Installer ${G}(VPN)${N}"
     echo -e "${C} 5) ${W}PufferPanel Installer ${G}(Minecraft Server Panel)${N}"
-    echo -e "${R} 6) Exit${N}"
+    echo -e "${C} 6) ${W}PufferPanel User ${G}(Minecraft Server Panel UserAdd)${N}"
+    echo -e "${R} 7) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
-    read -p "${Y}👉 Select an option [1-6]: ${N}" choice
+    read -p "${Y}👉 Select an option [1-7]: ${N}" choice
 
     case $choice in
         1)
@@ -80,12 +81,18 @@ while true; do
             ;;
         6)
             echo ""
+            echo -e "${Y}🖥️  Pufferpanel UserAdd...${N}"
+            curl -fsSL https://raw.githubusercontent.com/jihan410/JIHAN_85/refs/heads/main/pufferpanel%20start | sed 's/\r$//' | bash
+            pause
+            ;;
+        7)
+            echo ""
             echo -e "${G}👋 Exiting... Thanks for using!${N}"
             exit 0
             ;;
         *)
             echo ""
-            echo -e "${R}❌ Invalid Option! Please select between 1-6.${N}"
+            echo -e "${R}❌ Invalid Option! Please select between 1-7.${N}"
             sleep 2
             ;;
     esac
