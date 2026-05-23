@@ -11,4 +11,3 @@ docker create --name pufferpanel \
                pufferpanel/pufferpanel:latest
 docker start pufferpanel
 docker exec -it pufferpanel /pufferpanel/bin/pufferpanel user add
-docker start pufferpanel
