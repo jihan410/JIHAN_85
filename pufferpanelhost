@@ -10,4 +10,3 @@ docker create --name pufferpanel \
                --restart=on-failure \
                pufferpanel/pufferpanel:latest
 docker start pufferpanel
-docker exec -it pufferpanel /pufferpanel/bin/pufferpanel user add
