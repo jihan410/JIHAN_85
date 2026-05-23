@@ -11,9 +11,7 @@ display_header() {
     cat << "EOF"
 ========================================================================
 Sponsor By These Guys!                                                                  
-HOPINGBOYZ
-Jishnu
-NotGamerPie
+HJIHAN_85
 ========================================================================
 EOF
     echo
