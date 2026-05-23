@@ -1,34 +1,34 @@
 #!/bin/bash
-# Playit installation script - Auto Installer Made by <3 Jishnu & hopingboyz
-# Tested on Ubuntu/Debian by Jishnu
-# made by hopingboyz
+# Playit installation script - Auto Installer Made by <3 JIHAN_85
+# Tested on Ubuntu/Debian by JIHAN_85
+# made by JIHAN_85
 
 set -e
 
-echo "=== Jishnu: Updating system ==="
+echo "=== JIHAN: Updating system ==="
 sudo apt update -y && sudo apt upgrade -y
 
-echo "=== Jishnu: Installing required dependencies ==="
+echo "=== JIHAN: Installing required dependencies ==="
 sudo apt install -y sudo curl gpg
 
-echo "=== Jishnu: Adding Playit APT repository ==="
+echo "=== JIHAN: Adding Playit APT repository ==="
 curl -fsSL https://playit-cloud.github.io/ppa/key.gpg | \
   gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/playit.gpg >/dev/null
 
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/playit.gpg] https://playit-cloud.github.io/ppa/data ./" | \
   sudo tee /etc/apt/sources.list.d/playit-cloud.list
 
-echo "=== Jishnu: Updating package list ==="
+echo "=== JIHAN: Updating package list ==="
 sudo apt update -y
 
-echo "=== Jishnu: Installing Playit ==="
+echo "=== JIAHN: Installing Playit ==="
 sudo apt install -y playit
 
-echo "=== Jishnu: Enabling Playit service ==="
+echo "=== JIHAN: Enabling Playit service ==="
 sudo systemctl enable --now playit
 
-echo "=== Jishnu: Running Playit setup ==="
+echo "=== JIHAN: Running Playit setup ==="
 playit setup
 
-echo "✅ Jishnu: Playit installation complete!"
-echo "➡️ Jishnu: Run 'playit status' to check the tunnel status."
+echo "✅ JIHAN: Playit installation complete!"
+echo "➡️ JIHAN: Run 'playit status' to check the tunnel status."
