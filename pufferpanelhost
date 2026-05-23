@@ -12,8 +12,8 @@ Signed-By: /etc/apt/keyrings/pufferpanel.gpg" | sudo tee /etc/apt/sources.list.d
 sudo apt update
 
 sudo apt-get install pufferpanel
-sudo pufferpanel user add
 sudo systemctl enable --now pufferpanel
 sudo groupadd --force --system docker
 sudo usermod -a -G docker pufferpanel
 systemctl restart pufferpanel
+sudo pufferpanel user add
