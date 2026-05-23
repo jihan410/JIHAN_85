@@ -50,13 +50,13 @@ while true; do
         1)
             echo ""
             echo -e "${Y}🔄 Running Playit Installer...${N}"
-            curl -fsSL https://raw.githubusercontent.com/Sagargamin/INSTALLER-REPO/refs/heads/main/dependency.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/jihan410/server8/refs/heads/main/playit-ins | sed 's/\r$//' | bash
             pause
             ;;
         2)
             echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
-            bash <(curl -fsSL bash <(curl -s https://raw.githubusercontent.com/jihan410/server8/refs/heads/main/vps.sh))
+            bash <(curl -fsSL bash <(curl -s https://raw.githubusercontent.com/jihan410/server8/refs/heads/main/vps.sh)
             pause
             ;;
         3)
