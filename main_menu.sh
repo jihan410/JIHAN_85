@@ -75,7 +75,7 @@ while true; do
         5)
             echo ""
             echo -e "${Y}🖥️  Installing Pufferpanel...${N}"
-            curl -fsSL https://raw.githubusercontent.com/jihan410/JIHAN_85/refs/heads/main/pufferpanel | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/jihan410/JIHAN_85/refs/heads/main/pufferpanelhost | sed 's/\r$//' | bash
             pause
             ;;
         6)
