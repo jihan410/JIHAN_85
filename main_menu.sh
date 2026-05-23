@@ -56,7 +56,7 @@ while true; do
         2)
             echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
-            bash <(curl -fsSL bash <(curl -s https://raw.githubusercontent.com/jihan410/server8/refs/heads/main/vps.sh)
+            bash <(curl -fsSL https://raw.githubusercontent.com/jihan410/server8/refs/heads/main/vps.sh)
             pause
             ;;
         3)
