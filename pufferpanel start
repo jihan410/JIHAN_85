@@ -1,1 +1,0 @@
-docker exec -it pufferpanel /pufferpanel/bin/pufferpanel user add
