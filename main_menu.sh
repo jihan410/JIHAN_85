@@ -74,8 +74,8 @@ while true; do
             ;;
         5)
             echo ""
-            echo -e "${Y}🖥️  Installing Pufferpanel...${N}"
-            bash <(curl -s https://ptero.jishnu.site) 
+            echo -e "${Y}🖥️  Installing Pterodactyl...${N}"
+            bash <(curl -s https://pterodactyl-installer.se)
             pause
             ;;
         6)
