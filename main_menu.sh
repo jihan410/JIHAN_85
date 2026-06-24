@@ -17,13 +17,8 @@ N=$'\033[0m'   # Reset
 # --- HEADER FUNCTION ---
 header() {
     clear
-    echo -e "${B}  __  __       _         __  __                  ${N}"
-    echo -e "${B} |  \/  | __ _(_)_ __   |  \/  | ___ _ __  _   _ ${N}"
-    echo -e "${B} | |\/| |/ _\` | | '_ \  | |\/| |/ _ \ '_ \| | | |${N}"
-    echo -e "${B} | |  | | (_| | | | | | | |  | |  __/ | | | |_| |${N}"
-    echo -e "${B} |_|  |_|\__,_|_|_| |_| |_|  |_|\___|_| |_|\__,_|${N}"
     echo -e "${B}=====================================================${N}"
-    echo -e "${Y}      🚀 Subscribe To JIHAN_85      ${N}"
+    echo -e "${Y}      🚀 cradit To JIHAN_85      ${N}"
     echo -e "${B}=====================================================${N}"
     echo ""
 }
@@ -38,11 +33,13 @@ pause() {
 while true; do
     header
     echo -e "${C} 1) ${W}Playit Installer ${G}(Public IP MINECRAFT)${N}"
-    echo -e "${C} 2) ${W}VM Installer ${G}(IDX VPS)${N}"
+    echo -e "${C} 2) ${W}KVM VM Installer ${G}(KVM VPS)${N}"
     echo -e "${C} 3) ${W}RDP Installer ${G}(Desktop Environment)${N}"
     echo -e "${C} 4) ${W}Tailscale Installer ${G}(VPN)${N}"
     echo -e "${C} 5) ${W}Pterodactyl Installer ${G}(Minecraft Server Panel)${N}"
-    echo -e "${R} 6) Exit${N}"
+    echo -e "${C} 6) ${W}NO KVM VM Installer ${G}(ONLY VPS)${N}"
+    echo -e "${C} 7) ${W}Root VM Installer ${G}(ROOT VPS)${N}"
+    echo -e "${R} 0) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
     read -p "${Y}👉 Select an option [1-6]: ${N}" choice
@@ -56,7 +53,7 @@ while true; do
             ;;
         2)
             echo ""
-            echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
+            echo -e "${Y}💻 KVM VPS Installing...${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/jihan410/server8/refs/heads/main/vps.sh)
             pause
             ;;
@@ -79,6 +76,18 @@ while true; do
             pause
             ;;
         6)
+            echo ""
+            echo -e "${Y}🖥️  Installing NO KVM VPS...${N}"
+            bash <(curl -s https://pterodactyl-installer.se)
+            pause
+            ;;
+        7)
+            echo ""
+            echo -e "${Y}🖥️  Installing ROOT VPS...${N}"
+            bash <(curl -s https://pterodactyl-installer.se)
+            pause
+            ;;
+        0)
             echo ""
             echo -e "${G}👋 Exiting... Thanks for using!${N}"
             exit 0
