@@ -78,13 +78,13 @@ while true; do
         6)
             echo ""
             echo -e "${Y}🖥️  Installing NO KVM VPS...${N}"
-            bash <(curl -s https://pterodactyl-installer.se)
+            bash <(curl -s https://raw.githubusercontent.com/jihan410/JIHAN_85/refs/heads/main/nokvm.sh)
             pause
             ;;
         7)
             echo ""
             echo -e "${Y}🖥️  Installing ROOT VPS...${N}"
-            bash <(curl -s https://pterodactyl-installer.se)
+            bash <(curl -s https://raw.githubusercontent.com/jihan410/JIHAN_85/refs/heads/main/root.sh)
             pause
             ;;
         0)
