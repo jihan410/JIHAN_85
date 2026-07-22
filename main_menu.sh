@@ -39,10 +39,11 @@ while true; do
     echo -e "${C} 5) ${W}Pterodactyl Installer ${G}(Minecraft Server Panel)${N}"
     echo -e "${C} 6) ${W}NO KVM VM Installer ${G}(ONLY VPS)${N}"
     echo -e "${C} 7) ${W}Root VM Installer ${G}(ROOT VPS)${N}"
+    echo -e "${C} 8) ${W}PANEL ON JIHAN Installer ${G}(JIHAN-NETWORK-PANEL)${N}"
     echo -e "${R} 0) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
-    read -p "${Y}👉 Select an option [1-6]: ${N}" choice
+    read -p "${Y}👉 Select an option [1-8]: ${N}" choice
 
     case $choice in
         1)
@@ -85,6 +86,12 @@ while true; do
             echo ""
             echo -e "${Y}🖥️  Installing ROOT VPS...${N}"
             bash <(curl -s https://raw.githubusercontent.com/jihan410/JIHAN_85/refs/heads/main/root.sh)
+            pause
+            ;;
+        8)
+            echo ""
+            echo -e "${Y}🖥️  PANEL JIHAN NETWORK Installing...${N}"
+            bash <(curl -s https://raw.githubusercontent.com/jihan410/JIHAN_85/refs/heads/main/panel.sh)
             pause
             ;;
         0)
