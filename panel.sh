@@ -37,7 +37,7 @@ install_panel() {
     git clone https://github.com/jihan410/JIHAN-NETWORK
     
     # Navigate into the directory
-    cd Jtg || { echo -e "${RED}[!] Failed to enter the directory!${NC}"; return; }
+    cd JIHAN-NETWORK || { echo -e "${RED}[!] Failed to enter the directory!${NC}"; return; }
     
     # Install node modules
     npm i 
